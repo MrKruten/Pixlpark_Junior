@@ -1,0 +1,12 @@
+.main-page{
+  &__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  &__container{
+    width: 850px;
+  }
+}

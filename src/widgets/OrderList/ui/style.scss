@@ -1,0 +1,14 @@
+.order-list{
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+
+  h2{
+    margin-bottom: 30px;
+  }
+
+  & li:not(:first-child){
+    margin-top: 20px;
+  }
+}

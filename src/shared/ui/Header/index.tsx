@@ -6,7 +6,7 @@ export const Header = () => {
 	return (
 		<header className='header'>
 			<Logo />
-			<h1>Задание для Junior-разработчика</h1>
+			<h1>Task for Junior Developer</h1>
 		</header>
 	);
 };

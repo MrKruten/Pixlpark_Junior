@@ -28,11 +28,18 @@ h1 {
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 110%;
 }
 
 h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 110%;
+}
+
+h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -51,7 +58,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $textColor;
   background-color: #509438;
 }
 
