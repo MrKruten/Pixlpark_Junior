@@ -1,5 +1,12 @@
+import { Header } from 'shared/ui';
+
 const MainPage = () => {
-	return <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>;
+	return (
+		<div className='main-page'>
+			<Header />
+			<main>ds</main>
+		</div>
+	);
 };
 
 export default MainPage;
