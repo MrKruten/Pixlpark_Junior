@@ -1,15 +1,19 @@
 import { FC } from 'react';
+import { useStore } from 'effector-react';
 
 import { Order } from 'entities/Order';
-import { IOrderAPI } from 'shared/constants';
 
+import { $orderList, getOrderListFx } from '../model';
 import './style.scss';
 
-interface IOrderList {
-	orders: Array<IOrderAPI>;
-}
+export const OrderList: FC = () => {
+	const orders = useStore($orderList);
+	const isLoading = useStore(getOrderListFx.pending);
 
-export const OrderList: FC<IOrderList> = ({ orders }) => {
+	if (isLoading) {
+		return <h1>Loading</h1>;
+	}
+
 	return (
 		<div className='order-list'>
 			<h2>Orders</h2>

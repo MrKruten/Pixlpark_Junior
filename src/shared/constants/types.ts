@@ -40,3 +40,10 @@ export interface IOrderAPI {
 	DateModified: string;
 	DatePaid: string;
 }
+
+export interface IToken {
+	AccessToken: string;
+	Expires: number;
+	RefreshToken: string;
+	Success: boolean;
+}
