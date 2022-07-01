@@ -40,5 +40,5 @@ sample({
 
 sample({
 	clock: getOrderListFx.failData,
-	target: checkAuthFx,
+	target: getAccessTokenFx,
 });

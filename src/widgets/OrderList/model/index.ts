@@ -6,7 +6,7 @@ import { API } from 'shared/api';
 export const getOrderList = createEvent();
 
 export const getOrderListFx = createEffect(async () => {
-	const token = await localStorage.getItem('authToken');
+	const token = localStorage.getItem('authToken');
 	return await API.getOrderList(token!);
 });
 

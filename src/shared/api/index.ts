@@ -28,24 +28,6 @@ const getAccessToken = async (token: string): Promise<IToken> => {
 	}
 };
 
-const refreshToken = async (token: string): Promise<IToken> => {
-	const url = `${BASE_URL}${AUTH}refreshtoken?refreshToken=${token}`;
-	try {
-		const request = await fetch(url, {
-			method: 'GET',
-		});
-
-		const response = await request.json();
-		if (!request.ok) {
-			throw Error(response.message);
-		}
-
-		return response;
-	} catch (e: any) {
-		throw Error(e.message);
-	}
-};
-
 const getRequestToken = async (): Promise<string> => {
 	const url = `${BASE_URL}${AUTH}requesttoken`;
 	try {
@@ -71,6 +53,7 @@ const getOrderList = async (token: string): Promise<Array<IOrderAPI>> => {
 		});
 
 		const response = await request.json();
+
 		if (!request.ok) {
 			throw Error(response.message);
 		}
@@ -85,5 +68,4 @@ export const API = {
 	getAccessToken,
 	getRequestToken,
 	getOrderList,
-	refreshToken,
 };
